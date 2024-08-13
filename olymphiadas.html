@@ -41,12 +41,23 @@
         }
 
         .news-article {
+            display: flex;
+            align-items: center;
             margin-bottom: 20px;
         }
 
         .news-article img {
-            width: 100%;
+            width: 250px; /* Ajuste o tamanho da imagem conforme necessário */
             height: auto;
+            margin-right: 20px;
+        }
+
+        .news-article .text {
+            flex: 1;
+        }
+
+        .news-article h3 {
+            margin-top: 0;
         }
 
         .news-button {
@@ -113,28 +124,34 @@
 
     <div class="news-section">
         <div class="news-article">
-            <h3>Brasil conquista ouro no vôlei de praia</h3>
-            <img src="https://www.metroworldnews.com.br/resizer/v2/RXLJKERXQZGYFAY4TJVTQROV7U.jpeg?smart=true&auth=8d5ac6fdb9898f7f6e38c160a438d5cef6a12afa58f0e0aa0acdea0f73a5f656&width=1200&height=674" height="250px">
-            <p>A dupla brasileira derrotou os favoritos americanos na final, garantindo mais uma medalha de ouro para o Brasil.</p>
-            <button class="news-button" onclick="window.location.href='file:///C:/Users/Estudante/Desktop/Brasil%20VOlei%20de%20paia.html';">
-                Leia Mais
-            </button>
+            <img src="https://www.metroworldnews.com.br/resizer/v2/RXLJKERXQZGYFAY4TJVTQROV7U.jpeg?smart=true&auth=8d5ac6fdb9898f7f6e38c160a438d5cef6a12afa58f0e0aa0acdea0f73a5f656&width=1200&height=674" alt="Vôlei de Praia">
+            <div class="text">
+                <h3>Brasil conquista ouro no vôlei de praia</h3>
+                <p>A dupla brasileira derrotou os favoritos americanos na final, garantindo mais uma medalha de ouro para o Brasil.</p>
+                <button class="news-button" onclick="window.location.href='file:///C:/Users/Estudante/Desktop/Brasil%20VOlei%20de%20paia.html';">
+                    Leia Mais
+                </button>
+            </div>
         </div>
         <div class="news-article">
-            <h3>Simone Biles faz história na ginástica artística</h3>
-            <img src="https://th.bing.com/th/id/OIF.siyYfxq2ziRUn2dXItKeRQ?rs=1&pid=ImgDetMain" height="250px">
-            <p>A ginasta americana se tornou a atleta mais condecorada da história das Olimpíadas, com um total de 8 medalhas de ouro.</p>
-            <button class="news-button" onclick="window.location.href='file:///C:/Users/Estudante/Desktop/Simone%20bila.html';">
-                Leia Mais
-            </button>
+            <img src="https://th.bing.com/th/id/OIF.siyYfxq2ziRUn2dXItKeRQ?rs=1&pid=ImgDetMain" alt="Simone Biles">
+            <div class="text">
+                <h3>Simone Biles faz história na ginástica artística</h3>
+                <p>A ginasta americana se tornou a atleta mais condecorada da história das Olimpíadas, com um total de 8 medalhas de ouro.</p>
+                <button class="news-button" onclick="window.location.href='file:///C:/Users/Estudante/Desktop/Simone%20bila.html';">
+                    Leia Mais
+                </button>
+            </div>
         </div>
         <div class="news-article">
-            <h3>Recorde mundial no atletismo</h3>
-            <img src="https://th.bing.com/th/id/R.f617c5b2731642462aefe6db28d5b2cf?rik=gRKbpq5SKcruKg&riu=http%3a%2f%2fimg01.lavanguardia.com%2f2012%2f08%2f05%2fJuegos-Olimpicos-el-jamaicano-_54334141589_54028874188_960_639.jpg&ehk=BmxIv%2fhnnYUp0TkPpHemkDG7XwRLVpRkxAieq9ZX1EQ%3d&risl=&pid=ImgRaw&r=0" height="250px">
-            <p>O velocista jamaicano quebrou o recorde mundial dos 100 metros rasos, com um tempo impressionante de 9,58 segundos.</p>
-            <button class="news-button" onclick="window.location.href='file:///C:/Users/Estudante/Desktop/usai%20but.html';">
-                Leia Mais
-            </button>
+            <img src="https://th.bing.com/th/id/R.f617c5b2731642462aefe6db28d5b2cf?rik=gRKbpq5SKcruKg&riu=http%3a%2f%2fimg01.lavanguardia.com%2f2012%2f08%2f05%2fJuegos-Olimpicos-el-jamaicano-_54334141589_54028874188_960_639.jpg&ehk=BmxIv%2fhnnYUp0TkPpHemkDG7XwRLVpRkxAieq9ZX1EQ%3d&risl=&pid=ImgRaw&r=0" alt="Atletismo">
+            <div class="text">
+                <h3>Recorde mundial no atletismo</h3>
+                <p>O velocista jamaicano quebrou o recorde mundial dos 100 metros rasos, com um tempo impressionante de 9,58 segundos.</p>
+                <button class="news-button" onclick="window.location.href='file:///C:/Users/Estudante/Desktop/usai%20but.html';">
+                    Leia Mais
+                </button>
+            </div>
         </div>
     </div>
 </body>
