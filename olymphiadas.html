@@ -13,16 +13,35 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow: hidden; 
         }
 
-        .container {
-            padding-top: 20px;
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 125px; 
+            object-fit: cover;
+            z-index: 1; 
+        }
+
+        .logo-container {
+            position: relative;
+            z-index: 2; /
+            margin-top: 20px; 
+            text-align: center;
+        }
+
+        .logo img {
+            height: 100px; 
         }
 
         table {
             border-collapse: collapse;
             width: 80%;
             margin-top: 20px;
+            z-index: 2; 
         }
 
         th, td {
@@ -38,6 +57,7 @@
         .news-section {
             margin-top: 30px;
             width: 80%;
+            z-index: 2; 
         }
 
         .news-article {
@@ -47,7 +67,7 @@
         }
 
         .news-article img {
-            width: 250px; /* Ajuste o tamanho da imagem conforme necessário */
+            width: 250px;
             height: auto;
             margin-right: 20px;
         }
@@ -76,8 +96,11 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://olympics.com/_pr/topic-assets/paris-2024/emblem-oly.svg" height="100">
+    <img class="background-image" src="https://s1.static.brasilescola.uol.com.br/be/2023/03/torre-eiffel.jpg" alt="Imagem de Fundo">
+    <div class="logo-container">
+        <div class="logo">
+            <img src="https://olympics.com/_pr/topic-assets/paris-2024/emblem-oly.svg" alt="Olympic Logo">
+        </div>
     </div>
     <table>
         <tr>
